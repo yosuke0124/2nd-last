@@ -1,5 +1,6 @@
 body {
   max-width: 1366px;
+  word-break: break-word;
 }
 
 * {
@@ -8,7 +9,7 @@ body {
 
 #header {
   width: 100%;
-  background: #FFFFff;
+  background: #C7C7CF;
   height: 80px;
   z-index: 999;
   position: relative;
@@ -53,22 +54,23 @@ body {
 .mv-wrap {
   text-align: left;
   padding-top: 140px;
-  padding-left: 733px;
+  padding-left: 55%;
+  margin: 0 auto;
   height: 264px;
 }
 
 .mv-wrap .mv-title {
   text-align: left;
-  width: 420px;
-  text-align: left;
   font-family: Bold;
   font-size: 30px;
   letter-spacing: 0.02px;
+  line-height: 45px;
+  white-space: normal;
 }
 
 .mv-wrap .mv-text {
   margin: 40px 0;
-  width: 300px;
+  width: 524px;
   font-size: 18px;
   color: #3E3E3E;
   opacity: 1;
