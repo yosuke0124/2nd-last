@@ -3,16 +3,24 @@ body {
   word-break: break-word;
 }
 
-* {
+*,
+body {
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
-#header {
+#header-section {
   width: 100%;
-  background: #C7C7CF;
+  height: 648px;
+}
+
+.header {
+  width: 100%;
   height: 80px;
+  background: #c7c7cf;
   z-index: 999;
-  position: relative;
+  position: absolute;
   top: 0px;
   left: 0px;
 }
@@ -47,6 +55,8 @@ body {
   width: 100%;
   height: 648px;
   position: relative;
+  top: 0;
+  left: 0;
   background-image: url(../img/mv.png);
   background-size: cover;
 }
@@ -69,10 +79,11 @@ body {
 }
 
 .mv-wrap .mv-text {
+  line-height: 26px;
   margin: 40px 0;
   width: 524px;
   font-size: 18px;
-  color: #3E3E3E;
+  color: #3e3e3e;
   opacity: 1;
 }
 
@@ -81,14 +92,100 @@ body {
 }
 
 .mv-wrap .mv-btn {
+  text-align: center;
   width: 280px;
-  color: black;
-  background: #FFAA3B;
-  box-shadow: 0px 3px 5px #3E3E3E;
+  background: #ffaa3b;
+  box-shadow: 0px 3px 5px #3e3e3e;
   border-radius: 10px;
   padding: 14px 48px;
 }
 
 .mv-wrap .mv-btn a {
+  color: white;
   text-decoration: none;
+}
+
+#news {
+  width: 100%;
+  height: 915px;
+  background-color: #F3F3F3;
+  padding: 130px 0;
+}
+
+.section-title {
+  font-size: 30px;
+  text-align: center;
+  margin-bottom: 0px;
+}
+
+.news-container {
+  max-width: 90%;
+  height: 655px;
+  background-color: white;
+  margin: 0 auto;
+  padding: 60px 0 40px;
+  box-shadow: 0px 5px 12px #3E3E3E;
+}
+
+.news-list {
+  width: 100%;
+  margin: 0 auto;
+  padding: 100px;
+}
+
+.news {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  letter-spacing: 0.45px;
+  opacity: 1;
+  padding-bottom: 40px;
+  padding-top: 40px;
+  border-top: solid 2px #555;
+}
+
+.news-date {
+  white-space: nowrap;
+  display: inline-block;
+  text-align: left;
+  font-size: 18px;
+  color: #3E3E3E;
+}
+
+.news-label {
+  white-space: nowrap;
+  display: inline-block;
+  border-radius: 50px;
+  border: 2px solid #3B69FF;
+  padding: 5px 34px;
+  margin: 0 60px;
+}
+
+.news-text {
+  width: 690px;
+  display: inline-block;
+  text-align: left;
+  color: #3E3E3E;
+}
+
+.news-3 {
+  padding-bottom: 20px;
+  border-bottom: solid 2px #3E3E3E;
+}
+
+.more {
+  width: 30%;
+  margin: 50px auto 0;
+}
+
+.more a {
+  font-weight: bold;
+  font-size: 23px;
+  padding: 20px 86px;
+  letter-spacing: 4px;
+  color: #3E3E3E;
+  opacity: 1;
+  text-align: center;
+  text-decoration: none;
+  border: 1px solid #000000;
 }
