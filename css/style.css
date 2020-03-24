@@ -47,7 +47,7 @@ body {
   text-decoration: none;
 }
 
-.header-nav-list li:last-child {
+.header-nav-list li:farst-child {
   margin-left: 0;
 }
 
